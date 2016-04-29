@@ -1,0 +1,152 @@
+.button {
+    background: #2AD7D6;
+    border: 0;
+    border-radius: 50%;
+    color: $button--color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Cutive Mono", monospace;
+    font-size: 4em;
+    height: 100%;
+    outline: none;
+    transition: all .2s ease;
+    width: 100%;
+    -webkit-appearance: none;
+    z-index: 1;
+    position: relative;
+
+    &:active {
+        font-size: 4.5em;
+    }
+
+    .text & {
+        font-size: 3em;
+    }
+
+    .poor & {
+        background: $button--poor;
+    }
+
+    .okay & {
+        background: $button--okay;
+        &:active {
+            font-size: 4.7em;
+        }
+    }
+
+    .good & {
+        background: $button--good;
+        &:active {
+            font-size: 4.9em;
+        }
+    }
+
+    .great & {
+        background: $button--great;
+        &:active {
+            font-size: 5.1em;
+        }
+    }
+
+    .amazing & {
+        background: $button--amazing;
+
+        &:active {
+            font-size: 5.3em;
+        }
+    }
+
+    &__wrap {
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        vertical-align: middle;
+
+        &:before {
+            content: "";
+            background: lighten($button--start, 15%);
+            border-radius: 50%;
+            display: block;
+            height: 98%;
+            width: 98%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .1s ease;
+            z-index: 0;
+        }
+
+        &.active {
+            &:active {
+                &:before {
+                    height: 105%;
+                    opacity: 0;
+                    width: 105%;
+                }
+            }
+
+            &.poor {
+                &:before {
+                    background: lighten($button--poor, 30%);
+                }
+                &:active:before {
+                    height: 110%;
+                    width: 110%;
+                }
+            }
+
+            &.okay {
+                &:before {
+                    background: lighten($button--okay, 30%);
+                }
+                &:active:before {
+                    height: 115%;
+                    width: 115%;
+                }
+            }
+
+            &.good {
+                &:before {
+                    background: lighten($button--good, 30%);
+                }
+                &:active:before {
+                    height: 120%;
+                    width: 120%;
+                }
+            }
+
+            &.great {
+                &:before {
+                    background: lighten($button--great, 30%);
+                }
+                &:active:before {
+                    height: 125%;
+                    width: 125%;
+                }
+            }
+
+            &.amazing {
+                &:before {
+                    background: lighten($button--amazing, 30%);
+                }
+                &:active:before {
+                    height: 130%;
+                    width: 130%;
+                }
+            }
+        }
+    }
+
+    &__timer {
+        bottom: 105%;
+        color: #fff;
+        cursor: pointer;
+        font-size: 2em;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 0);
+        width: 100%;
+    }
+}

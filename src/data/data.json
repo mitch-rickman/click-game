@@ -1,0 +1,43 @@
+{
+    "work": [
+        {
+            "type": "Employer",
+            "name": "Next IT",
+            "tite": "Lead fronend developer",
+            "description": "As the lead front end developer at Next IT I worked on multitude of projects. I built websites, landing pages, emails, helped develop some of our internal web based tools and products. I was also in charge of web accessiblity efforts and I would help anyone who may have been stuck on a particularly challenging front end based challenge. I built websites into content management systems as well as helped with design here and there.",
+            "time": "2011 - Current"
+        },
+        {
+            "type": "Project",
+            "name": "Next IT website",
+            "description": "Next IT's website circa 2016.",
+            "link": "http://www.nextit.com",
+            "technologies": [
+                "html",
+                "php",
+                "sass",
+                "css",
+                "javascript",
+                "angular.js (minor usage)",
+                "gsap",
+                "gulp",
+                "webpack"
+            ]
+        },
+        {
+            "type": "Project",
+            "name": "Next IT blog",
+            "description": "The Next IT blog is built ontop of the Wordpress CMS. This is a custom built template with backend integration custom made to manage our subscriptions.",
+            "link": "http://blog.nextit.com/",
+            "technologies": [
+                "html",
+                "php",
+                "css",
+                "sass",
+                "javascript",
+                "jquery",
+                "wordpress"
+            ]
+        }
+    ]
+}
